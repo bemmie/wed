@@ -19,7 +19,7 @@
     "prettier:check": "prettier --list-different \"./{src,e2e}/**/*.{ts,js,scss}\"",
     "precommit": "pretty-quick --staged",
     "generate": "ng generate",
-    "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
+    "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript express path",
     "postinstall": "npm run env -s && ng build --prod"
   },
   "dependencies": {
@@ -36,6 +36,8 @@
     "@angular/service-worker": "^7.0.0",
     "@ng-bootstrap/ng-bootstrap": "^3.3.0",
     "bootstrap": "^4.1.1",
+    "express": "^4.16.4",
+    "path": "^0.12.7",
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
     "core-js": "^2.5.6",
     "lodash": "^4.17.10",
