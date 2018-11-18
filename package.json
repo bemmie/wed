@@ -6,7 +6,7 @@
     "ng": "ng",
     "build": "npm run env -s && ng build --prod",
     "watch": "npm run env -s && ng serve --aot --proxy-config proxy.conf.js",
-    "start": "angular-http-server --path dist",
+    "start": "npm run env -s && ng serve --aot --proxy-config proxy.conf.js",
     "serve:sw": "npm run build -s && npx http-server ./dist -p 4200",
     "lint": "ng lint && stylelint \"src/**/*.scss\" --syntax scss && htmlhint \"src\" --config .htmlhintrc",
     "test": "npm run env -s && ng test",
@@ -19,7 +19,7 @@
     "prettier:check": "prettier --list-different \"./{src,e2e}/**/*.{ts,js,scss}\"",
     "precommit": "pretty-quick --staged",
     "generate": "ng generate",
-    "preinstall": "npm install -g angular-http-server",
+    "preinstall": "npm install -g http-server",
     "postinstall": "npm run env -s && ng build --prod"
   },
   "dependencies": {
