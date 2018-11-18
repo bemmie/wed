@@ -19,7 +19,8 @@
     "prettier:check": "prettier --list-different \"./{src,e2e}/**/*.{ts,js,scss}\"",
     "precommit": "pretty-quick --staged",
     "generate": "ng generate",
-    "postinstall": "npm run build"
+    "preinstall": "npm install -g angular-http-server",
+    "postinstall": "ng build --prod"
   },
   "dependencies": {
     "@angular/animations": "^7.0.0",
@@ -52,7 +53,6 @@
     "@types/jasminewd2": "^2.0.2",
     "@types/lodash": "^4.14.108",
     "@types/node": "^8.10.13",
-    "angular-http-server": "^1.7.0",
     "codelyzer": "^4.4.4",
     "hads": "^1.7.0",
     "htmlhint": "^0.10.0",
