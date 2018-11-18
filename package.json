@@ -19,7 +19,7 @@
     "prettier:check": "prettier --list-different \"./{src,e2e}/**/*.{ts,js,scss}\"",
     "precommit": "pretty-quick --staged",
     "generate": "ng generate",
-    "postinstall": "npm run prettier -s && npm run build"
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "@angular/animations": "^7.0.0",
