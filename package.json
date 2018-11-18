@@ -19,8 +19,8 @@
     "prettier:check": "prettier --list-different \"./{src,e2e}/**/*.{ts,js,scss}\"",
     "precommit": "pretty-quick --staged",
     "generate": "ng generate",
-    "preinstall": "npm install -g http-server",
-    "postinstall": "npm run env -s && ng build --prod"
+    "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
+    "postinstall": "ng build --prod"
   },
   "dependencies": {
     "@angular/animations": "^7.0.0",
